@@ -1,0 +1,5 @@
+/* packageHome/components/canvas-share-img/canvas-share-img.wxss */
+.canvas{
+  width: 705rpx;
+  height: 1180rpx;
+}

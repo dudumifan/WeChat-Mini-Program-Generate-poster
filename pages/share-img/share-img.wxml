@@ -1,0 +1,28 @@
+<view class="share-circle">
+  <text class="share-circle-title">分享</text>
+  <view class="share-circle-main">
+    <view class="share-item" animation='{{animation}}'>
+      <image class='share-img' mode='widthFix' src='/images/good-circle.png'></image>
+      <text>赞~\(≧▽≦)/~</text>
+    </view>
+    <view class="share-item" animation='{{animation1}}' bindtap="toShareFriend">
+      <image class='share-img' mode='widthFix' src='/images/wechat.png'></image>
+      <text>生成海报</text>
+    </view>
+  </view>
+  <view class="share-close" catchtap="closePage">
+    X
+  </view>
+</view>
+
+<view class="canvas-view" wx:if='{{show}}'>
+  <canvas-share-img product='{{product_info}}' bindconfim='saveImg'></canvas-share-img>
+</view>
+
+<!-- 权限 -->
+<!-- modal -->
+<tips-modal wx:if="{{show_tips_modal}}" confirm-open-type="openSetting" show-close="{{false}}" bindcancel="closeModal" bindconfim="confimModal">
+  <view class='tips-main'>
+    <view class='tips-text'>检测到您没有打开相册权限，是否前去开启？</view>
+  </view>
+</tips-modal>

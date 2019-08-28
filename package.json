@@ -1,0 +1,12 @@
+{
+  "name": "WeChat-Mini-Program-Generate-poster",
+  "version": "1.0.0",
+  "description": "https://my.oschina.net/mdu",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
